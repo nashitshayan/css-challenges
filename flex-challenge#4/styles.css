@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Roboto:wght@300;400&display=swap');
+
+:root {
+	--clr--primary: #222c2a;
+	--clr--secondary: #f3eed9;
+	--clr--accent: #824936;
+	--clr--neutral: #fff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+h1,
+h2 {
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	font-size: 3.75rem;
+}
+h2 {
+	font-size: 2.25rem;
+}
+.subtitle {
+	font-size: 1.125rem;
+	font-weight: 300;
+	letter-spacing: 0.3em;
+}
+.clr--primary {
+	background-color: var(--clr--primary);
+	color: #fff;
+}
+.clr--secondary {
+	background-color: var(--clr--secondary);
+}
+.clr--accent {
+	background-color: var(--clr--accent);
+	color: #fff;
+}
+.clr--neutral {
+	background-color: var(--clr--neutral);
+}
+
+.accent {
+	color: var(--clr--accent);
+}
+.secondary {
+	color: var(--clr--secondary);
+}
+.container {
+	max-width: 1128px;
+	margin: 0 auto;
+}
+section {
+	padding: 5em 3em;
+}
+
+.header {
+	min-height: 660px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+}
+.header div {
+	max-width: 700px;
+}
+
+.split {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+}
+.split > * {
+	flex-basis: 100%;
+}
+.center {
+	text-align: center;
+}
+.section-heading {
+	margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+	.split {
+		flex-direction: row;
+	}
+}
